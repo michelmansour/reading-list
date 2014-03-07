@@ -1,0 +1,17 @@
+<p>
+    <strong>Title:</strong>
+    <%= @book.title %>
+</p>
+
+<p>
+    <strong>Review:</strong>
+    <%= @book.review %>
+</p>
+
+<h2>Comments</h2>
+<%= render @book.comments %>
+
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+
+<%= link_to 'Back', books_path %> | <%= link_to 'Edit', edit_book_path(@book) %>
