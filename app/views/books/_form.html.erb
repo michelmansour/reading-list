@@ -11,8 +11,23 @@
   </div>
   <% end %>
   <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+  </p>
+
+  <p>
+      <%= f.label :pub_year %><br>
+      <%= f.text_field :pub_year, :size => "4" %>
+  </p>
+
+  <p>
+      <%= f.label :total_pages %><br>
+      <%= f.text_field :total_pages %>
+  </p>
+
+  <p>
+      <%= f.label :isbn %><br>
+      <%= f.text_field :isbn %>
   </p>
 
   <p>
