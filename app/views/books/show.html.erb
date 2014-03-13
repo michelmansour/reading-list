@@ -5,7 +5,7 @@
 
 <p>
     <strong>Publication Year:</strong>
-    <%= @book.publication_date.year %>
+    <%= @book.publication_date ? @book.publication_date.year : ''%>
 </p>
 
 <p>
